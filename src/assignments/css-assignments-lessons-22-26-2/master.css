@@ -1,32 +1,18 @@
 div {
-  position: absolute;
+  text-align-last: center;
 }
-.green {
-  background-color: #009688;
-  z-index: 3;
-  top: 20px;
-  left: 20px;
-}
-.red {
-  background-color: #f44336;
-  z-index: 4;
-  top: 30px;
-  left: 30px;
-}
-.blue {
-  background-color: #03a9f4;
-  z-index: 2;
-}
-.black {
-  background-color: black;
-  z-index: 1;
-  top: 20px;
+.one {
+  font-family: "open-sans", sans-serif;
+  font-weight: 300px;
+  font-style: italic;
 }
 
-.green,
-.red,
-.blue,
-.black {
-  width: 100px;
-  height: 100px;
+.Two {
+  font-family: "cairo";
+  font-weight: 700px;
+}
+
+.three {
+  font-family: "Jomhuria";
+  font-weight: 400px;
 }
