@@ -1,0 +1,28 @@
+div {
+  border: 5px solid;
+  margin: 5px;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div p {
+  border: inherit;
+  background: #eee;
+  padding: inherit;
+}
+
+.parent .child-1 {
+  border-color: orangered;
+}
+.parent .child-1 .one {
+  border-color: orangered;
+}
+
+.parent .child-2 {
+  border-color: cyan;
+}
+
+.parent .child-2 .two {
+  border-color: cyan;
+}
