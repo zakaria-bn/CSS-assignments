@@ -1,12 +1,17 @@
 .parent {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2px;
+  /* padding: 2px; */
   width: 400px;
   border: 2px solid rgb(224, 210, 210);
   list-style-type: none;
+  padding: 0px;
 }
-.one {
-  list-style: none;
+/* ol {
+  padding: 5px;
+} */
+ul {
+  padding: 0px;
+  text-indent: 2px;
 }
 .child-1 {
   background-color: rgb(240, 240, 240);
@@ -19,6 +24,9 @@
   padding: 10px;
 }
 
+.child-2 li {
+  list-style-type: upper-roman;
+}
 .child-3 {
   background-color: rgb(240, 240, 240);
   margin: 10px;
@@ -27,6 +35,7 @@
 }
 li {
   background-color: white;
-  margin: 3px;
+  margin: 5px;
   padding: 0px;
+  text-indent: 11px;
 }
