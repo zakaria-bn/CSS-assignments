@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+caption {
+  text-align: center;
+  width: 700px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+table {
+  width: 700px;
+  display: table;
+  text-align: center;
+  border-bottom: 3px solid rgb(33, 177, 134);
+}
+thead th {
+  color: white;
+  background-color: rgb(50, 50, 50);
+  padding: 10px;
+}
+table td {
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+}
+span {
+  color: white;
+  padding: 5px;
+}
+.one {
+  background-color: #129ddf;
+}
+.Two {
+  background-color: #e54885;
+}
