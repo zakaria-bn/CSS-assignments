@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid #eee;
+  width: 550px;
+  height: 220px;
+}
+
+p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-color: transparent rgb(241, 97, 121) transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  left: -25px;
+}
+p::before {
+  content: attr(data-person);
+  background-color: #eee;
+  position: absolute;
+  left: -100px;
+  /* width: 40px;
+  height: 20px; */
+  float: left;
+  padding: 10px;
+  margin-top: -10px;
+}
+p {
+  position: relative;
+  background-color: #eee;
+  width: 400px;
+  padding: 15px;
+  margin-left: 100px;
+  margin-top: 10px;
+  height: 25px;
+  border-left: 5px solid rgb(241, 97, 121);
+}
