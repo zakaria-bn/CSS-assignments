@@ -1,0 +1,19 @@
+body {
+  border: 1px solid #eee;
+  width: 380px;
+}
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  padding: 20px;
+  margin: 20px;
+  height: 20px;
+  width: 300px;
+}
+div::first-letter {
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-left: -35px;
+}
