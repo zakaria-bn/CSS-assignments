@@ -1,0 +1,96 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.parent {
+  width: 550px;
+  position: relative;
+}
+
+.child1,
+.child2 {
+  background-color: #eee;
+  float: left;
+  width: 250px;
+  height: 300px;
+  position: relative;
+}
+.child1 {
+  margin-right: 50px;
+}
+.child1::before {
+  content: "Basic";
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  width: 186px;
+  height: 20px;
+  padding: 7px;
+  background-color: #03a9f4;
+  top: 25px;
+  left: 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.child1::after {
+  content: "Or";
+  background-color: #03a9f4;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 130px;
+  right: -39px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.child2::before {
+  content: "";
+  border: 1px solid #03a9f4;
+  height: 300px;
+  position: absolute;
+  left: -24.5px;
+}
+.child2::after {
+  content: "Pro";
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  width: 186px;
+  height: 20px;
+  padding: 7px;
+  background-color: #03a9f4;
+  top: 25px;
+  left: 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.one,
+.two {
+  text-align: center;
+  background-color: #ddd;
+  width: 200px;
+  height: 200px;
+  padding-top: 70px;
+  font-size: 40px;
+  position: absolute;
+  top: 75px;
+  right: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
