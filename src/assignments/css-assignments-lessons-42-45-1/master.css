@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+  background-color: #eee;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+  position: relative;
+  transition: margin-top, 0.5s, 1s, linear, 1s;
+  -webkit-transition: margin-top, 0.5s, 1s, linear, 1s;
+  -moz-transition: margin-top, 0.5s, 1s, linear, 1s;
+  -ms-transition: margin-top, 0.5s, 1s, linear, 1s;
+  -o-transition: margin-top, 0.5s, 1s, linear, 1s;
+}
+
+.child1 {
+  background-color: #ddd;
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  right: 25px;
+  font-size: small;
+  transition: margin-top, 0.5s, 0.5s, linear, 1.5s;
+  -webkit-transition: margin-top, 0.5s, 0.5s, linear, 1.5s;
+  -moz-transition: margin-top, 0.5s, 0.5s, linear, 1.5s;
+  -ms-transition: margin-top, 0.5s, 0.5s, linear, 1.5s;
+  -o-transition: margin-top, 0.5s, 0.5s, linear, 1.5s;
+}
+
+.parent:hover {
+  margin-top: 0px;
+}
+
+.parent:hover .child1 {
+  margin-top: 40px;
+}
