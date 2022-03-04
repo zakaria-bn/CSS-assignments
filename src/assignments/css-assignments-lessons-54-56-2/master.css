@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+div {
+  width: 600px;
+  background-color: #eee;
+  margin: 20px auto;
+  padding: 20px;
+  caret-color: red;
+  position: relative;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  background-color: red;
+  background-image: linear-gradient(to right, #f44336 50%, #69bfb6 50%);
+}
+
+.two,
+.three,
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
