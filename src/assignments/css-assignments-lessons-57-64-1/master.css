@@ -1,0 +1,48 @@
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 10% 85%;
+  gap: 20px 20px;
+  counter-increment: "Element";
+  color: white;
+}
+
+div {
+  background-color: #607d8b;
+  display: grid;
+}
+.EL1::before {
+  content: "Element 1";
+}
+.EL2::before {
+  content: "Element 2";
+}
+.EL3::before {
+  content: "Element 3";
+}
+.EL4::before {
+  content: "Element 4";
+}
+.EL5::before {
+  content: "Element 5";
+}
+.EL6::before {
+  content: "Element 6";
+}
+.EL1,
+.EL2,
+.EL3,
+.EL4,
+.EL5,
+.EL6 {
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
