@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 20px 20px;
+}
+div {
+  background-color:#2196F3 ;
+  font-weight: bold;
+  
+}
+div.one { 
+  order: 8;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 8;
+}
+div.two{ 
+  order: 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 5;
+}
+div.three{ 
+  order: 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 3;
+}
+div.four{ 
+  order: 4;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 3;
+}
+div.five{ 
+  order: 5;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 5;
+  grid-row: span 3;
+}
+div.six{ 
+  order: 6;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 3;
+}
+div.seven{ 
+  order: 7;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 3;
+}
+div.eight{ 
+  order: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 8;
+}
