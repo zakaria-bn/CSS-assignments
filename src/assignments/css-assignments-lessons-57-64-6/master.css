@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.grid {
+  padding: 20px;
+  width: 100%;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+div {
+  line-height: 1.5;
+}
+span {
+  font-weight: bold;
+  color: #ccc;
+}
+div p {
+  font-weight: bold;
+}
+div .EL1,
+.EL2,
+.EL3,
+.EL4,
+.EL5,
+.EL6,
+.EL7,
+.EL8,
+.EL9,
+.EL10 {
+  border-bottom: 3px solid red;
+  padding: 15px;
+}
+
+div .EL1 {
+  background-color: white;
+  grid-area: 1/1/5/3;
+  color: black;
+}
+
+div .EL2 {
+  background-color: white;
+  grid-area: 1/3/5/3;
+  color: black;
+}
+div .EL3 {
+  background-color: black;
+  grid-area: 1/4/13/4;
+  color: white;
+}
+div .EL4 {
+  background-color: black;
+  grid-area: 5/2/9/4;
+  color: white;
+}
+div .EL5 {
+  background-color: white;
+  grid-area: 5/1/13/1;
+  color: black;
+}
+div .EL6 {
+  background-color: black;
+  grid-area: 9/2/13/4;
+  color: white;
+}
+div .EL7 {
+  background-color: white;
+  grid-area: 13/1/16/1;
+  color: black;
+}
+div .EL8 {
+  background-color: black;
+  grid-area: 13/2/16/2;
+  color: white;
+}
+div .EL9 {
+  background-color: white;
+  grid-area: 13/3/16/3;
+  color: black;
+}
+div .EL10 {
+  background-color: white;
+  grid-area: 13/4/16/4;
+  color: black;
+}
