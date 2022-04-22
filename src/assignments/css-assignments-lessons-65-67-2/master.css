@@ -5,7 +5,8 @@
   margin: 50px auto;
 }
 div,
-div::before {
+div::before,
+div::after {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -17,10 +18,7 @@ div {
   height: 200px;
   background-color: #ddd;
   text-align: center;
-  line-height: 180px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: #e91e63 #e91e63 #e91e63 white;
+  line-height: 200px;
   position: relative;
 }
 
@@ -29,6 +27,17 @@ div::before {
   position: absolute;
   width: 200px;
   height: 200px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #e91e63 #e91e63 #e91e63 white;
+  top: -10px;
+  left: -10px;
+}
+div::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
   border-width: 10px;
   border-style: solid;
   border-color: #0aa5f0 white #0aa5f0 #0aa5f0;
