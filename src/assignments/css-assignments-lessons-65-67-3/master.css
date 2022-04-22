@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px auto;
+}
+div,
+div::before,
+div::after {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 200px;
+  position: relative;
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #e91e63 #e91e63 #e91e63 white;
+  top: -10px;
+  left: -10px;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+div::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #0aa5f0 white #0aa5f0 #0aa5f0;
+  top: -20px;
+  left: -20px;
+  transition: transform 0.5s 0.5s;
+  -webkit-transition: transform 0.5s 0.5s;
+  -moz-transition: transform 0.5s 0.5s;
+  -ms-transition: transform 0.5s 0.5s;
+  -o-transition: transform 0.5s 0.5s;
+}
+
+div:hover::before {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+div:hover::after {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transition: transform 0.5s 0.5s;
+  -webkit-transition: transform 0.5s 0.5s;
+  -moz-transition: transform 0.5s 0.5s;
+  -ms-transition: transform 0.5s 0.5s;
+  -o-transition: transform 0.5s 0.5s;
+}
