@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: unset;
+  font-size: 20px;
+}
+div div:not(:nth-child(1)),
+p:not(.h3) {
+  color: red;
+}
