@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: unset;
+  font-size: 20px;
+}
+div:first-child div:nth-child(5) {
+  color: red;
+}
