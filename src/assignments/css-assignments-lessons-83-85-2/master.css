@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.parent div {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: #eee;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Mobile   */
+@media (max-width: 767px) {
+  span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+/* Medium  Screens */
+@media (min-width: 768px) and (max-width: 1198px) {
+  .parent div {
+    width: calc(50% - 30px);
+  }
+  span {
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+  }
+}
+/* large Screen*/
+@media (min-width: 1199px) {
+  .parent div {
+    width: calc(25% - 30px);
+  }
+  span {
+    font-weight: bold;
+    color: #6bbdb6;
+    font-size: 20px;
+  }
+}
