@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  width: 150px;
+  height: 80px;
+  margin: 20px auto;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #009688;
+}
+
+h1::before {
+  content: "";
+  border: solid 10px #009688;
+  height: 60px;
+  position: absolute;
+  left: -15px;
+  transform: skew(20deg, 0deg);
+  -webkit-transform: skew(20deg, 0deg);
+  -moz-transform: skew(20deg, 0deg);
+  -ms-transform: skew(20deg, 0deg);
+  -o-transform: skew(20deg, 0deg);
+}
+
+h1::after {
+  content: "";
+  border: solid 5px #ffffff;
+  position: absolute;
+  top: 0;
+  height: 70px;
+  left: 5px;
+  transform: skewX(20deg);
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+}
